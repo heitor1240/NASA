@@ -1,0 +1,253 @@
+:root {
+    --cor-principal: #003366;
+}
+.logo {
+    padding: 0;
+    width: 1;
+    height: 1;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 0.2cm;
+    text-align: center;
+   
+   
+}
+nav {
+    background-color: var(--cor-principal);
+    
+    color: white;
+    padding: 0.2cm;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 3px;
+}
+/*começo da imagem interativa*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.comparison-container1 {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.comparison-slider1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.comparison-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.before {
+    z-index: 1;
+}
+
+.after {
+    clip-path: inset(0 50% 0 0); /* Inicialmente mostra 50% da imagem "depois" */
+}
+
+.slider-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 3;
+    cursor: ew-resize;
+    pointer-events: auto;
+}
+/*final do código*/
+
+.hero-section img {
+    width: 100%;
+    height: 150%;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2, h3 {
+    color: var(--cor-principal);
+    margin-top: 0;
+}
+
+.services, .about, .products, .blog, .contact {
+    background: white;
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
+.service-items, .product-items, .blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service-item, .product-item, .blog-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+ .barra{
+     display: block;
+     margin: 0;
+     margin-left: auto;
+    margin-right: auto;
+ }
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.comparison-item {
+    width: 48%; /* Define que as imagens ocupem quase metade do container cada */
+    text-align: center;
+}
+
+.comparison-item img {
+    width: 100%; /* As imagens ocuparão toda a largura do container */
+    height: auto; /* Mantém as proporções corretas */
+    border: 1px solid #ccc; /* Adiciona uma borda fina */
+}
+
+.comparison-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact form {
+    background: #e0e0e0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact form input, .contact form textarea {
+    width: 98%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    background: var(--cor-principal);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    width: 99%;
+}
+
+footer {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
